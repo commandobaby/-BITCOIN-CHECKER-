@@ -1,0 +1,16 @@
+{
+  "name": "backend_app",
+  "version": "1.0.0",
+  "description": "back end of the app, connection with firebase plus stockage of data and api to the bitcoin server each minute",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "firebase": "^4.6.0",
+    "node-cron": "^1.2.1"
+  }
+}
