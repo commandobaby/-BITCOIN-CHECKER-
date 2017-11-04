@@ -1,0 +1,15 @@
+
+<ion-content padding class="food-detail">
+  <ion-row class="close-modal" (click)="dismiss()"></ion-row>
+  <ion-row class="main-modal" col-2>
+    <div class="wrapper">
+      <ion-item>
+        <ion-label>Default Currency</ion-label>
+        <ion-select [(ngModel)]="select_currencies" (ionChange)="save()">
+        <ion-option *ngFor="let item of currency" value="{{item}}">{{item}}</ion-option>
+      </ion-select>
+      <button ion-button>Default</button>
+      </ion-item>
+    </div>
+  </ion-row>
+</ion-content>

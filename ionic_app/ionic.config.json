@@ -1,0 +1,8 @@
+{
+  "name": "wallstreet",
+  "app_id": "11c538551",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

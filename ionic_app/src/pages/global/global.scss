@@ -1,0 +1,26 @@
+page-global {
+    font-family: montserrat !important;
+   .caption{
+  	font-weight:bold;
+  	min-width: 150px;
+  	display: inline-block;
+  }
+
+  ion-row{
+  	//border:1px solid #fff;
+  	background: #2197f3;
+  	color: #fff;
+  	height: 70px;
+  	text-align: center;
+  	font-size: 13px
+  }
+
+  ion-row div{
+  	margin-top: 18px;
+  }
+
+
+  ion-col{
+  	border:1px solid #fff
+  }
+}
