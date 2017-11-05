@@ -1,6 +1,6 @@
 import { Component,ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams, App,LoadingController,AlertController,ModalController,Content} from 'ionic-angular';
-import { Http, Headers } from '@angular/http';
+import { NavController, NavParams, App,LoadingController,AlertController,ModalController,Content} from 'ionic-angular';
+import { Http} from '@angular/http';
 import * as Constant from '../../config/constants';
 import { DetailPage } from '../detail/detail';
 import { SettingsPage } from '../settings/settings';

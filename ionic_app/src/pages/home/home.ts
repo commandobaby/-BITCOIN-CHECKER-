@@ -1,12 +1,12 @@
 import { Component} from '@angular/core';
 import { NavController} from 'ionic-angular';
 import {TopPage} from '../top/top';
-import { HTTP } from '@ionic-native/http';
+//import { HTTP } from '@ionic-native/http';
 import {GlobalPage} from '../global/global';
 import {AboutPage} from '../about/about';
-import { AdMobFreeBannerConfig,AdMobFree} from '@ionic-native/admob-free';
+import { AdMobFree} from '@ionic-native/admob-free';
 import * as Constant from '../../config/constants';
-import { UniqueDeviceID } from '@ionic-native/unique-device-id';
+//import { UniqueDeviceID } from '@ionic-native/unique-device-id';
 
 @Component({
 	selector: 'page-home',
@@ -20,8 +20,8 @@ export class HomePage {
 	constructor(
 		public navCtrl: NavController,
 		public admobFree:AdMobFree,
-   	 	public request: HTTP,
-        private uniqueDeviceID: UniqueDeviceID
+//   	 	public request: HTTP,
+  //      private uniqueDeviceID: UniqueDeviceID
 ){
 		this.admobFree.interstitial.config({
 			id: Constant.intAdmobId,
@@ -29,13 +29,14 @@ export class HomePage {
 		})
 		this.admobFree.interstitial.prepare()
 
-
+/*
             this.uniqueDeviceID.get()
                 .then((uuid: any) => this.uuid_in_db(uuid))
                 .catch((error: any) => console.log(error));
+*/
 
 	}
-
+/*
 	uuid_in_db(uuid){
 
         this.request.post('http://localhost:5555/register', {id : uuid, on: "0"}, {})
@@ -45,4 +46,5 @@ export class HomePage {
             console.log(error.status);
         });
     }
+*/
 }

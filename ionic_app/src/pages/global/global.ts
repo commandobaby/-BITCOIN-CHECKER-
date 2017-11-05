@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams,LoadingController} from 'ionic-angular';
-import { Http, Headers } from '@angular/http';
+import {  NavController, NavParams,LoadingController} from 'ionic-angular';
+import { Http } from '@angular/http';
 import {Storage} from '@ionic/storage';
  	import * as Constant from '../../config/constants';
 /**

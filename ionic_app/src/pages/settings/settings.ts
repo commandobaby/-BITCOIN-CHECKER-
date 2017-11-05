@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams,ViewController} from 'ionic-angular';
+import {  NavController, ViewController} from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import * as Constant from '../../config/constants';
 /**

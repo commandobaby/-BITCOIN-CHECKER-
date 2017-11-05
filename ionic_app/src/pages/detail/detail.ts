@@ -1,8 +1,8 @@
 import { Component,ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams,LoadingController  } from 'ionic-angular';
-import { Http, Headers } from '@angular/http';
+import {  NavController, NavParams,LoadingController  } from 'ionic-angular';
+import { Http } from '@angular/http';
 import { SocialSharing } from '@ionic-native/social-sharing';
-import { AdMobFreeBannerConfig,AdMobFree} from '@ionic-native/admob-free';
+import { AdMobFree} from '@ionic-native/admob-free';
 import * as Constant from '../../config/constants';
 /**
  * Generated class for the DetailPage page.
@@ -13,7 +13,7 @@ import * as Constant from '../../config/constants';
  declare var require: any;
 
  var hcharts=require('highcharts');
- var Highcharts = require('highcharts');
+ //var Highcharts = require('highcharts');
  require('highcharts/modules/stock')(hcharts)
 
  @Component({
@@ -290,7 +290,7 @@ import * as Constant from '../../config/constants';
  					series: {
  						events: {
  							legendItemClick: function(event) {
- 								var index = event.target.index
+ 								//var index = event.target.index
  								// save_preferences(that.chartName, index, this.chart);
  							}
  						}
